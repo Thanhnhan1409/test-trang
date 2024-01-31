@@ -76,7 +76,7 @@ header{
     background-color: #8a8989;
 }
 .buy>p{
-    padding: 20px 40px;
+    padding: 16px 35px;
     background-color: #00c4f4;
     border-radius: 5px;
 }
@@ -95,3 +95,4 @@ header{
     height: calc(100% - 164px);
     z-index: -1;
 }
+
