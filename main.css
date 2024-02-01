@@ -7,7 +7,7 @@
 
 header{
     display: flex;
-    padding: 10px 0;
+    padding: 8px 0;
     width: 100%;
     height: 100px;
     color: #fff;
@@ -25,11 +25,12 @@ header{
     width: 100%;
 }
 .header__container{
+    position: absolute;
     justify-content: space-between;
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 18px;
 }
 .logo{
     display: block;
@@ -76,14 +77,15 @@ header{
     background-color: #8a8989;
 }
 .buy>p{
-    padding: 16px 35px;
+    padding: 18px 40px;
     background-color: #00c4f4;
     border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
 }
 .mobile__menu{
     display: none;
 }
-
 #banner{
     background-image: url(banner_bg02.jpg);
     background-size: cover;
@@ -91,8 +93,38 @@ header{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: calc(100% - 164px);
     z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.banner__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    z-index: 1;
+    padding-top: 400px;
+}
+.banner__content{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+}
+#banner>img{
+    transform: scale(1.25);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
 }
 
