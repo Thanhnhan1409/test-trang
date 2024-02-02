@@ -31,9 +31,7 @@ header{
     width: 100%;
     align-items: center;
     padding: 0 18px;
-}
-.logo{
-    display: block;
+    padding-right: 30px;
 }
 .main__menu{
     list-style: none;
@@ -52,12 +50,34 @@ header{
     position: relative;
     display: flex;
     align-items: center;
+    
 }
 #langue>ul{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: none;
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    list-style: none;
+    line-height: 1.8;
+    box-sizing: border-box;
+    padding: 10px 45px 10px 15px;
+    border-radius: 5px;
+    background: #0B1D33;
+    visibility: hidden;
+    transform-origin: top center;
+    opacity: 0;
+    transform: perspective(400px) rotateX(-45deg);
+    transition: 0.5s;
+}
+#langue>ul>li{
+    transition: 0.5s;
+}
+#langue:hover ul{
+    visibility: unset;
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+}
+#langue>ul>li:hover {
+    color: #11adec;
 }
 .chevron{
     color: #11adec;
@@ -77,7 +97,7 @@ header{
     background-color: #8a8989;
 }
 .buy>p{
-    padding: 18px 40px;
+    padding: 20px 48px;
     background-color: #00c4f4;
     border-radius: 5px;
     font-weight: 700;
@@ -86,19 +106,21 @@ header{
 .mobile__menu{
     display: none;
 }
+
 #banner{
     background-image: url(banner_bg02.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0px;
     z-index: -1;
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 .banner__container{
     display: flex;
@@ -117,12 +139,13 @@ header{
     letter-spacing: 1px;
     margin-bottom: 80px;
 }
+
 #banner>img{
     transform: scale(1.25);
     display: flex;
     position: absolute;
     width: 100%;
-    bottom: -10px;
+    bottom: 30px;
     left: 0;
     background-size: cover;
     background-position: center;
