@@ -1,0 +1,239 @@
+/* 
+#banner{
+    position: relative;
+	padding: 225px 0 0;
+	z-index: 1;
+}
+.banner__backgr{
+    background-image: url(/IMG/banner_bg02.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    width: 100%;  
+    height: 100%;  
+}
+/* .banner__backgr::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-image: url(https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* transform: scale(1.25); */
+    /* height: 722px;
+    z-index: -1;
+    -webkit-background-size: cover;  
+    -moz-background-size: cover;  
+    -o-background-size: cover;   
+}
+ .banner__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    z-index: 1;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner__content{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+}
+
+#banner>img{
+    transform: scale(1.25);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}*/
+/* Extra large devices (large desktops, 1800px and up) */
+/* Extra large devices (large desktops, 1500px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Small devices (landscape phones, 576px and up) */
+ 
+ 
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: Outfit;
+ }
+ 
+ header{
+    position: relative;
+     display: flex;
+     padding: 8px 0;
+     width: 100%;
+     height: 100px;
+     color: #fff;
+     margin-top: 30px;
+     top: 0;
+     left: 0;
+     position: fixed;
+     z-index: 99;
+ }
+ .main__header{
+     width: 100%;
+ }
+ #sticky__header{
+    position: relative;
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+    }
+.header__container{
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0 18px;
+        padding-right: 30px;
+        background-color:  #050b15;
+ }
+ .main__menu{
+     list-style: none;
+     display: flex;
+     box-sizing: border-box;
+     margin-left: 100px;
+ }
+ .main__menu>li{
+    display: block;
+    width: auto;
+    height: auto;
+     margin-right: 8vh;
+ }
+ .header__action{
+     display: flex;
+     align-items: center;
+ }
+ #langue{
+     position: relative;
+     display: flex;
+     align-items: center;
+     
+ }
+ #langue>ul{
+     position: absolute;
+     top: 40px;
+     left: -10px;
+     list-style: none;
+     line-height: 1.8;
+     box-sizing: border-box;
+     padding: 10px 45px 10px 15px;
+     border-radius: 5px;
+     background: #0B1D33;
+     visibility: hidden;
+     transform-origin: top center;
+     opacity: 0;
+     transform: perspective(400px) rotateX(-45deg);
+     transition: 0.5s;
+ }
+ #langue>ul>li{
+     transition: 0.5s;
+ }
+ #langue:hover ul{
+     visibility: unset;
+     opacity: 1;
+     transform: perspective(400px) rotateX(0deg);
+ }
+ #langue>ul>li:hover {
+     color: #11adec;
+ }
+ .chevron{
+     color: #11adec;
+     display: block;
+     font-size: 10px;
+     font-weight: 700;
+     margin-left: 10px;
+ }
+ .buy{
+     padding-left: 60px;
+ }
+ .header__action>p{
+     margin-left: 60px;
+     content: "";
+     height: 30px;
+     width: 1px;
+     background-color: #8a8989;
+    }
+    .buy>p{
+        padding: 20px 48px;
+        background-color: #00c4f4;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .mobile__menu{
+        display: none;
+    }
+    
+    /* banner */
+    #banner{
+        position: relative;
+        padding-top: 225px;
+    }
+    .banner__backgr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/All/IMG/banner_bg02.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% - 164px);
+    z-index: -1;
+ }
+ .banner__backgr::before{
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    background-image: url(https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+    z-index: 0;
+ }
+ .banner__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.banner__content{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
